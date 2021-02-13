@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A mockup-site that serves as a dashboard for a company's current shipments.">
+    <meta name="author" content="Nathan Hobbs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xemplary Shipping Services</title>
+
+    <!-- Bootstrap v5.0.0-beta1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="tan">
+
+    <!-- INSERT HTML PAGE CONTENT HERE -->
+        <!--Navigation-->
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active text-dark" href="metrics.html">Metrics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Customer Insights</a>
+            </li>
+        </ul>
+
+        <div class="starter-template text-center py-5 px-3">
+            <h1><a href="index.html" class="text-dark">Xemplary Shipping Planner</a></h1>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        </div>
+    
+        <!--Put in a section with card navigation for metrics and customer insights  -->
+    
+    
+        <section class="dark-green">
+            <h3 class="text-center m-3 pt-4">Your Dashboard</h3>
+                <div class="row text-center d-flex content-justify-around m-4">
+                    <figure class="col-sm-6 col-md-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg>
+                        <figcaption class="text-center">Zip Codes</figcaption>
+                        <p class="display-2 text-center">4</p>
+                    </figure>
+
+                    <figure class="col-sm-6 col-md-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                        </svg>
+                        <figcaption class="text-center">Undelivered Orders</figcaption>
+                        <p class="display-2 text-center">10</p>
+                    </figure>
+
+                    <figure class="col-sm-6 col-md-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
+                            <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg>
+                        <figcaption class="text-center">High Priority</figcaption>
+                    </figure>
+
+                    <figure class="col-sm-6 col-md-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                        </svg>
+                        <figcaption class="text-center">Customers Serving</figcaption>
+                        <p class="display-2">18</p>
+                    </figure>
+
+            </div>
+                <!--End first column of symbols-->
+            <!--End of symbols-->
+        </section>
+
+        <!--Ideas: Home page should display information that says "serving customer needs since 1997" or something.        -->
+
+        <!--Ability to view snapshot overview of data (sort of like how WordPress gives you that dashboard look on home page - six circles or so with text?); other pages provide customer specific insights. Some of them could be clickable icons. -->
+
+        <!--Circle for customers served with a number-->
+        <!--Circle for geograhpy-->
+        <!--Large orders?-->
+
+
+        <!--Navigation tabs include Metrics, which is a dropdown that breaks things down by category, and another called customerInsights where you can learn about how to apply analytical data - for example, seeing that half of your orders are still undelivered may mean that your system process needs to change. This could be a fun place to use Bootstrap progress bars. Metrics may work well for incorporating the p5 sketches. -->
+
+        <!--Assets to collect/obtain: Symbols for the main page dashboard, symbols to help explain the navigation bar, background images for a shipping planner -->
+
+        <!--Colors: Light green, dark green, and tan. This should be a very natural/enviornmentally friendly, earthy, nature conscious group -->
+
+        <!--Typography: Monospace title  -->
+
+    <!-- Bootstrap js - do not delete! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!-- end of do not delete -->
+</body>
+
+</html>

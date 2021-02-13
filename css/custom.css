@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* Add your custom CSS declarations below  */
+
+.light-green {
+    background-color: #A4D1A2;
+}
+
+.dark-green {
+    background-color: #7BC17E;
+}
+
+.tan {
+    background-color: #F7DCB4;
+}
+
+svg {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
