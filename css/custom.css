@@ -1,6 +1,19 @@
 @charset "UTF-8";
-/* Add your custom CSS declarations below  */
 
+/*Google Fonts*/
+h1 {
+    font-family: 'Khula', sans-serif;
+}
+
+p, a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h5 {
+    background-color: black;
+}
+
+/*Background colors*/
 .light-green {
     background-color: #A4D1A2;
 }
@@ -17,10 +30,34 @@ svg {
     color: black;
 }
 
+/*For navigation links*/
 a {
     text-decoration: none;
 }
 
+/*Responsive images*/
 img {
     max-width: 100%;
 }
+
+/*Responsive iframe*/
+iframe {
+    max-width: 100%;
+}
+
+/*The Singing Cat Solution courtesy of StackOverflow*/
+/*https://stackoverflow.com/questions/17838607/making-an-iframe-responsive*/
+/*
+.wrapper {
+    position: relative;
+    padding-bottom: 56.25%;  //16:9 Aspect Ratio
+    padding-top: 25px;
+    height: 0;
+}
+.wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/

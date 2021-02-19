@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!--Metadata-->
     <meta charset="UTF-8">
     <meta name="description" content="Description of this web site">
     <meta name="author" content="Nathan Hobbs">
@@ -10,40 +11,108 @@
 
     <!-- Bootstrap v5.0.0-beta1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!--Custom CSS-->
     <link href="css/custom.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body class="tan">
-        <!--Navigation-->
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="metrics.html">Metrics</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active text-dark" href="customerInsights.html">Customer Insights</a>
-            </li>
-        </ul>
+    <!--Navigation-->
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="metrics.html">Metrics</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active text-dark" href="customerInsights.html">Customer Insights</a>
+        </li>
+    </ul>
 
-        <div class="starter-template text-center py-5 px-3">
-            <h1><a href="index.html" class="text-dark">Xemplary Shipping Planner</a></h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    <!--Title-->
+    <div class="starter-template text-center py-5 px-3">
+        <h1><a href="index.html" class="text-dark">Xemplary Shipping Planner</a></h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    </div>
+
+    <h2 class="text-center m-4">Customer Insights</h2>
+
+    <!--10/18 orders undelivered-->
+    <h3 class="text-center">Delivered  Orders</h3>
+    <div class="row">
+        <div class="col-sm-6 progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 55.55%" aria-valuenow="55.55" aria-valuemin="0" aria-valuemax="100">55.55%</div>
         </div>
-        
-        <h2 class="text-center">Customer Insights</h2>
+        <div class="col-sm-6">
+            <p class="lead text-center">Needs Improvement</p>
+        </div>
+        <p class="text-center">Only 10 of the previous 18 orders have been successfully delivered.</p>
+    </div>
     
-        <section class="dark-green">
-            <h3 class="text-center m-3 pt-4">Your Dashboard</h3>            
-        </section>
+    <!--2/2 orders delivered-->
+    <h3 class="text-center">Top Priority Items Delivered</h3>
+    <div class="row">
+        <div class="col-sm-6 progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+        </div>
+        <div class="col-sm-6">
+            <p class="lead text-center">Excellent</p>
+        </div>
+        <p class="text-center">All top priority items have been delivered.</p>
+    </div>
+    
+    <!--2 delivered, 4 not delivered-->
+    <h3 class="text-center">High Priority Items Delivered</h3>
+    <div class="row">
+        <div class="col-sm-6 progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 33.33%" aria-valuenow="33.33" aria-valuemin="0" aria-valuemax="100">33.33%</div>
+        </div>
+        <div class="col-sm-6">
+            <p class="lead text-center">Needs Improvement</p>
+        </div>
+        <p class="text-center">Only 2 of the 6 orders have been successfully delivered.</p>
+    </div>
+    
+    <!--3 delivered, 5 undelivered-->
+    <h3 class="text-center">Medium Priority Items Delivered</h3>
+    <div class="row">
+        <div class="col-sm-6 progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+        </div>
+        <div class="col-sm-6">
+            <p class="lead text-center">Satisfactory</p>
+        </div>
+        <p class="text-center">2 medium priority items still need delivering.</p>
+    </div>
+    
+    <!--1/2 orders delivered-->
+    <h3 class="text-center">Low Priority Items Delivered</h3>
+    <div class="row">
+        <div class="col-sm-6 progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+        </div>
+        <div class="col-sm-6">
+            <p class="lead text-center">Excellent</p>
+        </div>
+        <p class="text-center">All top priority items have been delivered.</p>
+    </div>
 
+
+
+    <!--Copyright Footer -->
+    <footer>
+        <p class="text-center">&copy; Nathan Hobbs 2021</p>
+    </footer>
 
     <!-- Bootstrap js - do not delete! -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    
+
     <!--p5.js library -->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
-    <script src="js/undelivered_orders.js"></script>
+    <!--    <script src="js/undelivered_orders.js"></script>-->
     <!-- end of do not delete -->
-</body>
-
-</html>
+</body></html>

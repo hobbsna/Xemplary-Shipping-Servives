@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!--Metadata -->
     <meta charset="UTF-8">
     <meta name="description" content="Description of this web site">
     <meta name="author" content="Nathan Hobbs">
@@ -10,45 +11,64 @@
 
     <!-- Bootstrap v5.0.0-beta1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <!--Custom CSS -->
     <link href="css/custom.css" rel="stylesheet" type="text/css">
-
 </head>
 
 <body class="tan">
 
-    <!-- INSERT HTML PAGE CONTENT HERE -->
-        <!--Navigation-->
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active text-dark" href="metrics.html">Metrics</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="customerInsights.html">Customer Insights</a>
-            </li>
-        </ul>
+    <!--Navigation-->
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link active text-dark" href="metrics.html">Metrics</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="customerInsights.html">Customer Insights</a>
+        </li>
+    </ul>
 
-        <div class="starter-template text-center py-5 px-3">
-            <h1><a href="index.html" class="text-dark">Xemplary Shipping Planner</a></h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    <!--Title -->
+    <div class="starter-template text-center py-5 px-3">
+        <h1><a href="index.html" class="text-dark">Xemplary Shipping Planner</a></h1>
+    </div>
+
+    <h2 class="text-center">Metrics</h2>
+
+    <!--p5.js sketches for different information-->
+    <section class="dark-green">
+        <!--Undelivered Orders Sketch -->
+        <h3 class="text-center m-3 pt-4" id="undeliveredOrders">Undelivered Orders</h3>        
+        <div class="text-center">
+            <iframe src="https://www.openprocessing.org/sketch/1075096/embed/" width="1080" height="500"></iframe>
         </div>
+
+        <!--Orders sorted by zip code sketch -->
+        <h3 class="text-center m-3 pt-4">Orders Sorted by Zip</h3>        
+        <div class="text-center">
+            <iframe src="https://www.openprocessing.org/sketch/1092879/embed/" width="1180" height="850"></iframe>
+        </div>
+        
+        <!--        <div id="undeliveredOrdersSketch"></div>-->
+        <!--        <div id="zipcodeOrdersSketch" class="wrapper"></div>-->
+    </section>
     
-        <h2 class="text-center">Metrics</h2>
-    
-        <section class="dark-green">
-            <h3 class="text-center m-3 pt-4">Your Dashboard</h3>
-                
-            <div id="undeliveredOrdersSketch"></div>
-            
-        </section>
+    <!--Copyright Footer    -->
+    <footer>
+        <p class="text-center">&copy; Nathan Hobbs 2021</p>
+    </footer>
 
 
     <!-- Bootstrap js - do not delete! -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    
+
     <!--p5.js library -->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
     <script src="js/undelivered_orders.js"></script>
     <!-- end of do not delete -->
-</body>
-
-</html>
+</body></html>
